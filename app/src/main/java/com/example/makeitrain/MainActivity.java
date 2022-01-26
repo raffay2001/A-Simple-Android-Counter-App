@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.NumberFormat;
 
@@ -44,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
         moneyCounter += 1000;
         moneyText.setText(String.valueOf(numberFormat.format(moneyCounter)));
 
+        if (moneyCounter > 20000){
+            moneyText.setTextColor(getResources().getColor(R.color.orange));
+        }
+
     }
 
     public void showTag(View view) {
@@ -52,4 +57,5 @@ public class MainActivity extends AppCompatActivity {
         moneyCounter -= 1000;
         moneyText.setText(String.valueOf(numberFormat.format(moneyCounter)));
     }
+
 }

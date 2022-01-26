@@ -4,4 +4,6 @@
     <string name="you_have">You Have</string>
     <string name="button">Increase</string>
     <string name="show_tag">Decrease</string>
+    <string name="price">$0</string>
+    <string name="showtoast">showtoast</string>
 </resources>
